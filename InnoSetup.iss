@@ -5,7 +5,7 @@
 #define MyAppVersion "1.0"
 #define MyAppPublisher "Jqshuv"
 #define MyAppURL "https://jqshuv.com/"
-#define MyAppExeName "InnoSetupExample.exe"
+#define MyAppExeName "MyProg.exe"
 #define MyAppAssocName MyAppName + " File"
 #define MyAppAssocExt ".myp"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
