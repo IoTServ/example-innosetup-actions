@@ -19,7 +19,7 @@ jobs:
 
     - name: BuildExampleApp
       working-directory: ./src
-      run: go build -ldflags -H=windowsgui main.go -o ..\InnoSetupExample.exe
+      run: go build -o ..\InnoSetupExample.exe -ldflags -H=windowsgui main.go
 
     - name: Building the installer
       run: |
