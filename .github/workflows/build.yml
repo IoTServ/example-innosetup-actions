@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        submodules: 'true'
 
     - name: Setup Go
       uses: actions/setup-go@v3
@@ -18,7 +20,7 @@ jobs:
         go-version: '1.19'
 
     - name: BuildExampleApp
-      working-directory: ./src
+      working-directory: ./app
       run: go build -o ..\InnoSetupExample.exe -ldflags -H=windowsgui main.go
 
     - name: Building the installer
